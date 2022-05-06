@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.hero{
+  width: 100%;
+  padding: 20px;
+  height: 162px;
+  background-color: #7fff938f;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-txt{
+  width: 90%;
+  margin: 0 auto;
+  color: #373737;
+  padding: 10px;
+}
+
+.mastHead-buttons{
+  flex-grow: unset;
+}
+
+.navbar {
+  background-color: #85fb618a;
+  
+}
+
+.navbar-brand{
+  background-color: #72ff6e;
+    padding: 15px;
+    border-radius: 30px;
+}
