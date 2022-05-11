@@ -1,56 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
 import bootstrap from 'bootstrap'
+import NavBar from './components/NavBar/NavBar'
 
 function App() {
+
+  let styleCustom = {
+    color : 'green',
+    border : '1px solid',
+    marginBottom: 20
+  }
+
+  /* Estilos en linea con doble {{}}*/
+  
   return (
     <div className="App">
-       {/* start NavBar */}
-            <nav className="navbar navbar-expand-lg navbar-light">
-              <div className="container-fluid">
-                <a className="navbar-brand" href="#">Vegan <br/>de a uno</a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span className="navbar-toggler-icon"></span>
-                </button>
-                <form className="d-flex">
-                    <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
-                    <button className="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-                <div className="collapse navbar-collapse mastHead-buttons" id="navbarSupportedContent">
-                  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                      <a className="nav-link active" aria-current="page" href="#">Ayuda</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Mi cuenta</a>
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link" href="#">Carrito</a>
-                    </li>
-                    {/* <li className="nav-item dropdown">
-                      <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="#">Action</a></li>
-                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                        <li><hr className="dropdown-divider" /></li>
-                        <li><a className="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li> */}
-                    {/* <li className="nav-item">
-                      <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li> */}
-                  </ul>
-                  
-                </div>
-              </div>
-            </nav>
-        {/* ends NavBar */}
+      <NavBar />
       <div className='hero'>
-        <div class="hero-txt">
-          <h1>Vegan de a uno</h1>
-          <p>Tu tienda de confianza ;)</p>
+        <div className="hero-txt">
+          <h1 /*style={styleCustom}*/>Vegan de a uno</h1>
+          <p>Tu tienda de confianza</p>
         </div>
       </div>
     </div>
