@@ -8,7 +8,7 @@ function App() {
   let styleCustom = {
     color : 'green',
     border : '1px solid',
-    marginBottom: 20
+    marginBottom: '20'
   }
 
   /* Estilos en linea con doble {{}}*/
@@ -23,6 +23,8 @@ function App() {
         </div>
       </div>
     </div>
+
+    
 
   );
 }
