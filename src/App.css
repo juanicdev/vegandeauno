@@ -67,3 +67,13 @@
     padding: 15px;
     border-radius: 30px;
 }
+
+.snackbar-custom{
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 9px #00004a;
+  padding: 10px;
+  color: withe;
+}

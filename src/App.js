@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import bootstrap from 'bootstrap'
 import NavBar from './components/NavBar/NavBar'
+import CardItem from './components/Card/Card'
+import CardClass from './components/Card/CardClass'
+import CardList from './components/CardList/CardList'
+import SnackBar from './components/SnackBar/SnackBar'
 
 function App() {
 
@@ -22,6 +26,10 @@ function App() {
           <p>Tu tienda de confianza</p>
         </div>
       </div>
+      <CardList />
+      
+
+
     </div>
 
     

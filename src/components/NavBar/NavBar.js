@@ -19,7 +19,7 @@ const NavBar = () => {
           <div className="collapse navbar-collapse mastHead-buttons" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                <a className="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                   Categorias
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{background : "#bdfda9"}}>
