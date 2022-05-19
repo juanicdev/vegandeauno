@@ -109,7 +109,9 @@ const NavBar = () => {
               </Button>
             ))}
           </Box>
-          <ShoppingCartIcon />
+          <ShoppingCartIcon>
+            <button> </button>
+          </ShoppingCartIcon>
 
           {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">

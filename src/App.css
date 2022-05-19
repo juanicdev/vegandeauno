@@ -60,7 +60,7 @@
 .navbar {
   background-color: #85fb618a;
   
-}
+  }
 
 .navbar-brand{
   background-color: #72ff6e;
@@ -79,4 +79,6 @@
 }
 .container{
   display: flex;
+  flex-direction: row;
+  /* flex-direction: column; */
 }

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 
@@ -6,6 +6,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 
 const Modal = ({handleClose, open, children}) => {
+
     return(
         <Dialog onClose={handleClose} open ={open}>
             <DialogTitle>
@@ -14,6 +15,7 @@ const Modal = ({handleClose, open, children}) => {
         </Dialog>
        
     )
+    
 }
 
 export default Modal

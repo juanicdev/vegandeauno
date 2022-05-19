@@ -23,7 +23,6 @@ const CardList = () => {
         <CardItem title="Hamburguesa de Pollo"  price={2503} image={"chickenvil.png"}/>
         <CardItem title="Hamburguesa de Carne"  price={2500} image={"karnevil.png"} />
         <CardItem title="Hamburguesa de Pollo"  price={2503} image={"chickenvil.png"}/>
-
     </div>
     )
 }
