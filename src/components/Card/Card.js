@@ -1,34 +1,26 @@
 //Componente de Presentacion
-import './Card.css'
-import { useState } from 'react'
-import { Button } from '@mui/material'
+import React from "react"
+import BasicButtons from "../Button.js/BasicButtons"
 
 
 
 //Functional Component
-const CardItem = ({image, title, price}) => {
-const [count, setCount] = useState(1)
-const stock = 5
+const CardItem = ({image, title, price, stock, initial}) => {
 
- const addCount = () =>{
-    setCount(count + 1)
-}
+    const onAdd = (count) => {
+            
+        console.log(count)
+    
+    }   
 
-const removeCount = () =>{
-    setCount (count - 1)
-}
-console.log (CardItem)
     return(
         <div className="card-item">
             <img src={`./${image}`} alt="asd" />
             <p>{title}</p>
             <span>${price} </span>
             <div>
-            <Button contained onClick={(addCount)} disabled ={( count === stock )} >+</Button>
-                    <p> Cantidad: {count}</p>
-                <Button contained onClick={(removeCount)} disabled={( count <= 0)} >-</Button>
+            <BasicButtons stock={stock} onAdd={onAdd} initial={initial} />
             </div>
-            <button>Detalle</button>
         </div>
     )
 }
